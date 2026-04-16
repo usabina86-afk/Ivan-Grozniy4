@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание - Соедини факты</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">⚔ Иван Грозный</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="biography.html" class="nav-link">Биография</a></li>
+                <li><a href="reforms.html" class="nav-link">Реформы</a></li>
+                <li><a href="oprichnina.html" class="nav-link">Опричнина</a></li>
+                <li><a href="conquests.html" class="nav-link">Завоевания</a></li>
+                <li><a href="quiz.html" class="nav-link active">Задание</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-small" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Московский_Кремль_в_XVII_веке.jpg/1200px-Московский_Кремль_в_XVII_веке.jpg');">
+        <div class="hero-overlay"></div>
+        <h1 class="hero-title-small">ПРОВЕРЬ СЕБЯ</h1>
+    </section>
+
+    <!-- QUIZ SECTION -->
+    <section class="quiz-section">
+        <div class="container">
+            <div class="quiz-header">
+                <h2>Соедини факт и ответ</h2>
+                <p>Нажми на левый факт, потом на правый ответ. Если ты прав, появится зелёная линия. Если неправильно — красная.</p>
+            </div>
+
+            <div class="quiz-container">
+                <svg id="connectorsSvg" class="connectors-svg"></svg>
+                
+                <div class="quiz-columns">
+                    <div class="quiz-column left-column">
+                        <h3>Факты</h3>
+                        <div class="quiz-item" data-pair="1530">Год рождения Ивана</div>
+                        <div class="quiz-item" data-pair="1547">Год венчания на царство</div>
+                        <div class="quiz-item" data-pair="1552">Взятие Казани</div>
+                        <div class="quiz-item" data-pair="1565">Начало опричнины</div>
+                        <div class="quiz-item" data-pair="moba">Символ опричников</div>
+                        <div class="quiz-item" data-pair="sobor">Первый созванный орган народного представительства</div>
+                        <div class="quiz-item" data-pair="sudebnik">Главный законодательный документ реформ</div>
+                        <div class="quiz-item" data-pair="1584">Год смерти</div>
+                        <div class="quiz-item" data-pair="stretcy">Новый вид войска, созданный Иваном</div>
+                        <div class="quiz-item" data-pair="vasily">Отец Ивана Грозного</div>
+                    </div>
+
+                    <div class="quiz-column right-column">
+                        <h3>Ответы</h3>
+                        <div class="quiz-item" data-answer="1530">1530</div>
+                        <div class="quiz-item" data-answer="1547">1547</div>
+                        <div class="quiz-item" data-answer="1552">1552</div>
+                        <div class="quiz-item" data-answer="1565">1565</div>
+                        <div class="quiz-item" data-answer="moba">Метла и собачья голова</div>
+                        <div class="quiz-item" data-answer="sobor">Земский собор</div>
+                        <div class="quiz-item" data-answer="sudebnik">Судебник 1550 года</div>
+                        <div class="quiz-item" data-answer="1584">1584</div>
+                        <div class="quiz-item" data-answer="stretcy">Стрельцы</div>
+                        <div class="quiz-item" data-answer="vasily">Василий III</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz-buttons">
+                <button class="btn btn-check" onclick="checkAnswers()">Проверить ответы</button>
+                <button class="btn btn-reset" onclick="resetQuiz()">Сбросить</button>
+            </div>
+
+            <div class="quiz-result" id="quizResult"></div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2024 Сайт создан для урока истории, 6 класс</p>
+        <p>✦ ── ✦ ── ✦</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
