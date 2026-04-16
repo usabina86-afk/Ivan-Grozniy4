@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Иван Грозный - Первый царь России</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">⚔ Иван Грозный</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Главная</a></li>
+                <li><a href="biography.html" class="nav-link">Биография</a></li>
+                <li><a href="reforms.html" class="nav-link">Реформы</a></li>
+                <li><a href="oprichnina.html" class="nav-link">Опричнина</a></li>
+                <li><a href="conquests.html" class="nav-link">Завоевания</a></li>
+                <li><a href="quiz.html" class="nav-link">Задание</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Saint_Basil%27s_Cathedral_and_the_Kremlin_in_Moscow_Russia.jpg/1200px-Saint_Basil%27s_Cathedral_and_the_Kremlin_in_Moscow_Russia.jpg');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-title">ИВАН ГРОЗНЫЙ</h1>
+            <p class="hero-subtitle animate-subtitle">Первый царь всея Руси · 1547–1584</p>
+            <button class="hero-btn" onclick="smoothScroll('cards-section')">Узнать больше</button>
+        </div>
+    </section>
+
+    <!-- CARDS SECTION -->
+    <section class="cards-section" id="cards-section">
+        <div class="container">
+            <h2 class="section-title">Исследуй историю</h2>
+            <div class="cards-grid">
+                <div class="card animate-card" style="animation-delay: 0s;">
+                    <div class="card-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Московский_Кремль_в_XVII_веке.jpg/1200px-Московский_Кремль_в_XVII_веке.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Биография</h3>
+                        <p>Жизнь первого царя России</p>
+                        <a href="biography.html" class="card-btn">Читать</a>
+                    </div>
+                </div>
+
+                <div class="card animate-card" style="animation-delay: 0.1s;">
+                    <div class="card-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Ivan_the_Terrible_by_Vasnetsov.jpg/800px-Ivan_the_Terrible_by_Vasnetsov.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Реформы</h3>
+                        <p>Судебник, стрельцы и новые законы</p>
+                        <a href="reforms.html" class="card-btn">Читать</a>
+                    </div>
+                </div>
+
+                <div class="card animate-card" style="animation-delay: 0.2s;">
+                    <div class="card-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Saint_Basil%27s_Cathedral_and_the_Kremlin_in_Moscow_Russia.jpg/1200px-Saint_Basil%27s_Cathedral_and_the_Kremlin_in_Moscow_Russia.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Опричнина</h3>
+                        <p>Тёмный период правления царя</p>
+                        <a href="oprichnina.html" class="card-btn">Читать</a>
+                    </div>
+                </div>
+
+                <div class="card animate-card" style="animation-delay: 0.3s;">
+                    <div class="card-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Ivan_the_Terrible_by_Vasnetsov.jpg/800px-Ivan_the_Terrible_by_Vasnetsov.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Завоевания</h3>
+                        <p>Казань, Астрахань и Сибирь</p>
+                        <a href="conquests.html" class="card-btn">Читать</a>
+                    </div>
+                </div>
+
+                <div class="card animate-card" style="animation-delay: 0.4s;">
+                    <div class="card-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Московский_Кремль_в_XVII_веке.jpg/1200px-Московский_Кремль_в_XVII_веке.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Задание</h3>
+                        <p>Соедини факты и проверь себя</p>
+                        <a href="quiz.html" class="card-btn">Тест</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FACTS SECTION -->
+    <section class="facts-section">
+        <div class="container">
+            <h2 class="section-title">Быстрые факты</h2>
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <div class="fact-number" data-target="1530">0</div>
+                    <p>Год рождения Ивана</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-number" data-target="1552">0</div>
+                    <p>Взятие Казани</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-number" data-target="25">0</div>
+                    <p>Лет до опричнины</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-number" data-target="1584">0</div>
+                    <p>Год смерти</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2024 Сайт создан для урока истории, 6 класс</p>
+        <p>✦ ── ✦ ── ✦</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
